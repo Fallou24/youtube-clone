@@ -1,0 +1,17 @@
+@mixin mediumDevice {
+    @media screen and (min-width:520px) {
+        @content;
+    }
+}
+
+@mixin largDevice {
+    @media screen and (min-width:768px) {
+        @content;
+    }
+}
+
+@mixin largestDevice {
+    @media screen and (min-width:1200px) {
+        @content;
+    }
+}

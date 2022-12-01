@@ -1,11 +1,15 @@
-import React from 'react';
+import React from "react";
 import "./styles/app.scss";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/home/Home";
 
 const App = () => {
   return (
-    <div>
-      hello world
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 

@@ -43,11 +43,17 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
+  background: var(--body-color);
 }
 
 .container {
-  max-width: 968px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1.5rem;
+}
+input{
+  border: none;
+  outline: none;
+  background: var(--body-color);
 }
