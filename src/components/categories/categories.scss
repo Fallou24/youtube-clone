@@ -1,0 +1,33 @@
+.categories {
+  display: flex;
+  width: 98%;
+  margin: 0 auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: max-content;
+  padding: 0.5rem 0;
+  column-gap: 0.5rem;
+  @media screen and (max-width:780px) {
+    width: 95%;
+   }
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+  scrollbar-width: none;
+  span {
+    white-space: nowrap;
+    background: rgba(128, 128, 128, 0.164);
+    padding: 0.5rem;
+    border-radius: 10px;
+    color: var(--title-color);
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      background: rgba(128, 128, 128, 0.301);
+    }
+  }
+  span.active {
+    background: var(--title-color);
+    color: var(--container-color);
+  }
+}

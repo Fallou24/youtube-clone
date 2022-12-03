@@ -36,16 +36,16 @@ const SidebarModal = ({ setOpenMenu, openMenu }) => {
           </NavLink>
         </div>
         <div className="sidebar__icons">
-          <NavLink>
+          <NavLink to="/" onClick={()=>setOpenMenu(false)}>
             <HomeIcon />
             <span>Home</span>
           </NavLink>
 
-          <NavLink to="/subscriptions">
+          <NavLink to="/subscriptions" onClick={()=>setOpenMenu(false)}>
             <SubscriptionsIcon />
             <span>Subscriptions</span>
           </NavLink>
-          <NavLink to="/likedVideos">
+          <NavLink to="/likedVideos" onClick={()=>setOpenMenu(false)}>
             <ThumbUpIcon />
             <span>Liked videos</span>
           </NavLink>
