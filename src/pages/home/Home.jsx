@@ -2,6 +2,7 @@ import React from "react";
 import Categories from "../../components/categories/Categories";
 import Header from "../../components/header/Header";
 import Sidebar from "../../components/sidebar/Sidebar";
+import Videos from "../../components/videos/Videos";
 import "./home.scss";
 
 const Home = () => {
@@ -10,7 +11,11 @@ const Home = () => {
       <Header />
       <div className="home__container">
         <Sidebar />
-        <Categories />
+        <div className="home__right">
+          <Categories />
+          <Videos/>
+        </div>
+        
       </div>
     </>
   );
