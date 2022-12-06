@@ -18,7 +18,7 @@ const Sidebar = () => {
       <NavLink to="/likedVideos">
         <ThumbUpIcon />
       </NavLink>
-      <button>
+      <button >
         <LogoutIcon />
       </button>
     </div>

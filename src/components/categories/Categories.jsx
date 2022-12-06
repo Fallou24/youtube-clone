@@ -26,7 +26,7 @@ const Categories = () => {
 
   return (
  
-      <div className="categories" onScroll={() => console.log(window.scrollX)}>
+      <div className="categories" >
         {categories.map((cat, index) => (
           <span
             key={index}
