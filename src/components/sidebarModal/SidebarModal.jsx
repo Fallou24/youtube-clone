@@ -5,6 +5,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import LogoutIcon from "@mui/icons-material/Logout";
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import SubscriptionsIcon from "@mui/icons-material/Subscriptions";
+import { logout } from "../../firebase/firebase";
 
 
 const SidebarModal = ({ setOpenMenu, openMenu }) => {
@@ -49,7 +50,7 @@ const SidebarModal = ({ setOpenMenu, openMenu }) => {
             <ThumbUpIcon />
             <span>Liked videos</span>
           </NavLink>
-          <button>
+          <button onClick={logout}>
             <LogoutIcon />
             <span>Log Out</span>
           </button>

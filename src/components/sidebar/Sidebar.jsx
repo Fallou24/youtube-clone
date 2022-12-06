@@ -5,6 +5,7 @@ import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import LogoutIcon from "@mui/icons-material/Logout";
 import { NavLink } from "react-router-dom";
 import "./sidebar.scss";
+import { logout } from "../../firebase/firebase";
 
 const Sidebar = () => {
   return (
@@ -18,7 +19,7 @@ const Sidebar = () => {
       <NavLink to="/likedVideos">
         <ThumbUpIcon />
       </NavLink>
-      <button >
+      <button onClick={logout} >
         <LogoutIcon />
       </button>
     </div>
